@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-fla
-
 <!DOCTYPE html>
 <html >
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
@@ -14,10 +12,10 @@
   
 </head>
 
-<body style="background-color: #181818">
+<body style="background-color: cyan">
   <div class="card" style="width: 28rem;margin: 0 auto;float: none;margin-bottom: 10px;margin-top: 30px;font-family: 'IBM Plex Sans', sans-serif;background-color: #282828">
 <article class="card-body">
-  <h4 class="card-title text-center mb-4 mt-1" style="color: white">Predict Your Result</h4>
+  <h4 class="card-title text-center mb-4 mt-1" style="color: white">ADMISSION PREDICTOR</h4>
   <hr>
   <form action="{{ url_for('predict')}}" method="post">
   <div class="form-group">
@@ -44,6 +42,7 @@
       <input name="CGPA" class="form-control" placeholder="CGPA (Out of 10)" type="text" required/>
   </div> <!-- input-group.// -->
   </div> <!-- form-group// -->
+  
 
   <div class="form-group">
   <button type="submit" class="btn btn-primary btn-block" style="background-color: #484848;border-color: #484848"> Predict  </button>
@@ -52,6 +51,10 @@
   </form>
 </article>
 </div> <!-- card.// -->
+
+  <marquee class="text-center" style="color:black; font-weight: bold;position: absolute;bottom: 1px;font-size: 20px;font-family: cursive;">Made by Shashank Jain, Hosted with Azure Web APP Service.</marquee>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
